@@ -1,3 +1,4 @@
+import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         task1(); //вызов метода решения задачи 1
@@ -12,6 +13,15 @@ public class Main {
     public static void task1 () {
         System.out.println("Задача 1");
         // Пишем код для задачи 1
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Введите возраст: ");
+        int age = scanner.nextInt();
+        if (age >= 18) {
+            System.out.println("Если возраст человека равен " + age + ", то он совершеннолетний");
+        } else {
+            System.out.println("Если возраст человека равен " + age + ", то он не достиг совершеннолетия, нужно немного подождать");
+        }
     }
 
     public static void task2 () {
