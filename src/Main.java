@@ -44,6 +44,16 @@ public class Main {
     public static void task3 () {
         System.out.println("Задача 3");
         // Пишем код для задачи 3
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Введите скорость: ");
+        int speed = scanner.nextInt();
+
+        if (speed > 60) {
+            System.out.println("Если скорость " + speed + ", то придется заплатить штраф");
+        } else if(speed >=0){
+            System.out.println("Если скорость " + speed + ", то можно ездить спокойно");
+        }
     }
 
     public static void task4 () {
