@@ -99,6 +99,20 @@ public class Main {
     public static void task6 () {
         System.out.println("Задача 6");
         // Пишем код для задачи 6
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Введите количество пассажиров: ");
+        int passengers = scanner.nextInt();
+
+        if (passengers > 102) {
+            System.out.println("В вагоне нет места для всех пассажиров.");
+        } else if (passengers >= 60) {
+            int standingPassengers = 102 - passengers;
+            System.out.println("В вагоне нет сидячих мест, но есть " + standingPassengers + " стоячих мест.");
+        } else {
+            int seatPlace = 60 - passengers;
+            System.out.println("В вагоне есть " + seatPlace + " свободных сидячих мест и " + (102 - 60) + " свободных стоячих мест.");
+        }
     }
 
     public static void task7 () {
