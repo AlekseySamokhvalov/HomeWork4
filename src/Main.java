@@ -59,6 +59,24 @@ public class Main {
     public static void task4 () {
         System.out.println("Задача 4");
         // Пишем код для задачи 4
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Введите возраст: ");
+        int age = scanner.nextInt();
+
+        if (age < 2) {
+            System.out.println("Если возраст человека равен " + age + ", то ему пора спать");
+        } else if (age <= 6) { //age >= 2 &&
+            System.out.println("Если возраст человека равен " + age + ", то ему нужно ходить в детский сад");
+        } else if (age <= 18) { //age >= 7 &&
+            System.out.println("Если возраст человека равен " + age + ", то ему нужно ходить в школу");
+        } else if (age < 24) { //age > 18 &&
+            System.out.println("Если возраст человека равен " + age + ", то его место в университете");
+        } else if (age <= 60) { //age >= 24 &&
+            System.out.println("Если возраст человека равен " + age + ", то ему пора ходить на работу");
+        } else {
+            System.out.println("Если возраст человека равен " + age + ", то он может отдохнуть");
+        }
     }
 
     public static void task5 () {
