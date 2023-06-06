@@ -118,6 +118,24 @@ public class Main {
     public static void task7 () {
         System.out.println("Задача 7");
         // Пишем код для задачи 7
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Введите первое число: ");
+        int one = scanner.nextInt();
+
+        System.out.print("Введите второе число: ");
+        int two = scanner.nextInt();
+
+        System.out.print("Введите третье число: ");
+        int three = scanner.nextInt();
+
+        if (one > two && one > three) {
+            System.out.println("Первое число " + one + " является наибольшим.");
+        } else if (two > one && two > three) {
+            System.out.println("Второе число " + two + " является наибольшим.");
+        } else {
+            System.out.println("Третье число " + three + " является наибольшим.");
+        }
     }
 
 }
