@@ -82,6 +82,18 @@ public class Main {
     public static void task5 () {
         System.out.println("Задача 5");
         // Пишем код для задачи 5
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Введите возраст ребенка: ");
+        int age = scanner.nextInt();
+
+        if (age < 5) {
+            System.out.println("Если возраст ребенка равен " + age + ", то ему нельзя кататься на аттракционе");
+        } else if (age < 14) { //age >= 5 &&
+            System.out.println("Если возраст ребенка равен " + age + ", то ему можно кататься на аттракционе в сопровождении взрослого");
+        } else {
+            System.out.println("Если возраст ребенка равен " + age + ", то ему можно кататься на аттракционе без сопровождения взрослого");
+        }
     }
 
     public static void task6 () {
