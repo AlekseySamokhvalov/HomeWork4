@@ -1,8 +1,10 @@
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
-        task1(); // решения задачи 1
-        task2();
+
+        task1(); //решения задачи 1
+        task2(); //решение задачи 2
+
         task3();
         task4();
         task5();
