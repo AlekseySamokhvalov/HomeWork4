@@ -129,9 +129,9 @@ public class Main {
         System.out.print("Введите третье число: ");
         int three = scanner.nextInt();
 
-        if (one > two && one > three) {
+        if (one >= two && one >= three) {
             System.out.println("Первое число " + one + " является наибольшим.");
-        } else if (two > one && two > three) {
+        } else if (two >= one && two >= three) {
             System.out.println("Второе число " + two + " является наибольшим.");
         } else {
             System.out.println("Третье число " + three + " является наибольшим.");
